@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>maquetación</title>
+        <style type="text/css">
+            @font-face{
+            font-family:'lucidastd';
+            src:url('fonts/LucidaStd/LucidaStd.svg'),
+            url('fonts/LucidaStd/LucidaStd.eot'),
+            url('fonts/LucidaStd/LucidaStd.ttf'),
+            url('fonts/LucidaStd/LucidaStd.woff');
+            }
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            body{
+                font-size: 14px;
+            }
+            html{
+                height: 100%;
+            }
+            img{
+               width: 100%; 
+            }
+            header{
+                display: flex;
+            }
+            section{
+                width: 50vw;
+                height: 100vh;
+            }
+            header section:first-child {
+                position: relative;
+                background: blue;
+            } 
+            header section:last-child {
+                position: relative;
+                background: red;
+            }
+            header section:first-child img,header section:last-child img{
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                object-position: center center;
+            }
+             header section:last-child img{
+                height: 100%;
+                object-fit: cover;
+            }
+            h1{
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+                font-size: 5vw;
+                color:aquamarine;
+                font-family: "lucidastd";
+            }
+            main{
+                width: 600px;
+                margin: auto;
+                font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+            }
+            main>p{
+                padding: 4em 0;
+                line-height: 1.4em;
+                color: palevioletred;
+                column-count: 2;
+                column-gap: 30px;
+                column-rule: 1px solid pink;
+                text-align: justify;
+                hyphens: auto;
+            }
+            article{
+                padding: 0 4em;
+                color: gray;                
+            }
+            article p{
+                margin: 0 0 1.2em 0;
+                text-align: justify;
+                hyphens:auto;
+            }
+            article p:first-child::first-letter{
+                font-family: 'Georgia', cursive;
+                color: pink;
+                font-size: 9em;
+                float: left;
+                line-height: 6rem;
+                padding-right: 1rem;
+                padding-left: 0.5rem;
+                padding-top: 0.5rem;
+                padding-bottom: 0.5rem;
+            }
+            .autor{
+                background: pink;
+                border-radius: 50%;
+                shape-outside: circle(50%) border-box;
+                float: left;
+                max-width: 15em;
+                margin-left: -4em;
+                margin-right: 4em;
+                shape-margin: 1em;
+            }
+            .autor img{
+                mix-blend-mode: hard-light;
+                border-radius: 50%;
+                shape-outside: circle(50%)
+                
+            }
+            .hexagono{
+                background: pink;
+                float: right;
+                max-width: 20em;
+                margin-right: -6em;
+                margin-left: 6em;
+                shape-margin: 1em;
+                clip-path: polygon(50% 0%, 100% 25%,100% 75%, 50% 100%,0% 75%, 0% 25%);
+                shape-outside: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%,0% 75%, 0% 25%) border-box;
+            }
+            .hexagono img{
+                clip-path: polygon(50% 0%, 100% 25%,100% 75%, 50% 100%,0% 75%, 0% 25%);
+                shape-outside: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%,0% 75%, 0% 25%);   
+            }
+            @media (max-width:600px){
+                body{
+                    font-size: 12px;
+                    background-color: blue;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <section>
+                <img src="img/cartel%20mucha.jpg">
+                <h1> Alphonse Mucha <br>graphic designer</h1>
+            </section>
+            <section>
+                <img src="img/cartel%20shigeo.jpg">
+                <h1> Shigeo Fukuda <br>graphic designer</h1>
+            </section>
+        </header>
+            <main> 
+                <p>Fue un diseñador gráfico, escultor y creador de ilusiones ópticas japones que es considerado como uno de los grandes artistas contemporáneos japoneses.</p>
+            <article>
+                <p>Estudió en la Universidad de Bellas Artes y Música en el Departamento de Diseño en Tokyo, (Japón). Al haber crecido en la Segunda Guerra Mundial y en su derrota, influyó en un carácter pacifista y social de sus obras, también se interesó por estilos occidentales minimalistas y tener algunos referentes como M.C.Escher para las ilusiones ópticas que llegan a caracterizar sus obras.</p>
+
+                <p>Se hizo conocido gracias a sus carteles y esculturas. El primer cartel conocido, fue elegido como imagen oficial de la Exposición de Japón 70. Poco después recibió el máximo galardón en la Bienal Internacional de Varsovia, en 1989 recibió el premio de planta en el Consurso Internacional de Cartel de Colorado, 1980 el premio de plata en la Bienal Internacional  de Diseño de Cartel de Lahti, y en 1985 el primer premio en la Bienal Internacional de Cartel de Moscú, entre otros.</p> 
+                <div class="autor">    
+                    <img src="img/Shigeo.jpg" alt="obra1">
+                </div> 
+                <p>Ha realizado carteles para Polonia, Finlandia, Portugal, Francia y Estados Unidos. Y así su carrera de diseñador fue ganando prestigio y en 1997 realizó una exposición titulada “Un artista de ingenio visual”, en el Museo nacional de Arte Moderno de Tokyo.</p>
+    
+                <p>También destacó por sus esculturas que juegan con la forma, las sombras, luces y materiales, entre las que resalta “Almuerzo con cascos” una escultura llena trozos de metal cuya sombra dibuja la silueta de una motocicleta.</p>
+
+                <p>Llegó a ser presidente de la Japan Graphic Designer Association, vicepresidente de Icograda, también impartió clases como profesor invitado en la Univerdad del Sur de Yanqtze, (China).</p>
+                Alfons Mucha nació Ivancice situado al sur de la región de Moravia. Gracias a su capacidad para el canto, pudo acudir a la ciudad Brno (capital de Moravia) para continuar su formación. Sin embargo cuando intentó entrar en la Academia de Bellas Artes de Praga fue rechazado. Y despues de eso trabajo en un breve periodo de tiempo como secretario del tribunal.
+
+<p>En busca de oportunidades, se trasladó a Viena que era uno de los lugares más importantes del modernismo europeo. Allí realizó varias, murales, ilustraciones para libros, retratos.. Así como sus trabajos en el Castillo Emmahof en Heusovany nad Javiskou para la familia Khuel- Belasi  y gracias a este Conde podría iniciar sus estudios artísticos en Alemania y París.</p>
+
+<p>Cuando Mucha acabó sus estudios en París (1889), que empezó a trabajar en las ilustraciones de revistas parisinas y empezó a ser reconocido, gracias a sus obras llenas de armonía y la imagen de una mujer sensual y romántica.</p>
+<p>También perteneció a una logia masónica llegando a ser Gran Maestro de la Gran Logia de Checoslovaquia.</p>
+<div class="hexagono"> 
+                    <img src="img/Alfons-Mucha-Savonnerie-de-bagnolet-1897.jpg" alt="obra2">
+                </div>
+<p>Un año importante fue el año 1867, ya que la Exposición Universal de París le ofreció grandes posibilidades para visualizar y afianzar su trabajo.</p>
+
+<p>En 1894 comenzó a trabajar para la actriz Sarah Bernhardt, creando carteles.</p>
+
+<p>El año 1900, se le encargó el trabajo del Pabellón de Bosnia Herzegovina para la Exposición Universal de 1900 en París.</p> 
+
+<p>De 1906 a 1910 Mucha se instalaría en EEUU donde conseguiría mecenas para despues volver a Chequía su patria e instalarse en Praga.</p> 
+
+<p>Fue en 1911 cuando pintó la serie de la “Epopeya Eslava”, que acabó siendo un regalo del autor a su patria y que fueron instaladas en un primer momento en el Ayuntamiento de Praga.</p> 
+
+<p>Posteriormente en 1931 realizó las vidrieras para la Catedral de San Vito en el Castillo de Praga y realiza los modelos para los billetes checos, sellos , escudos de armas…</p>
+
+<p>Murió el 14 de Junio de 1939 al poco tiempo de finalizar el “Juramento de los Eslavos”. En sus últimos años fue considerado como un pintor de moral dudosa y sufrió la persecución por parte de los nazis. Su muerte se ocasionaría tras un interrogatorio de la gestapo a consecuencia de una neumonía.</p> 
+        </article>
+        </main>    
+    </body>
+</html>
